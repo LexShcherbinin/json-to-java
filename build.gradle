@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'jsonschema2pojo'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'org.jsonschema2pojo:jsonschema2pojo-gradle-plugin:1.0.1'
+    }
+}
+
+group 'com.github.lexshcherbinin'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+compileTestJava.options.encoding = 'UTF-8'
+
+jsonSchema2Pojo {
+    //Пакет, в который генерировать файлы
+    targetPackage = 'com.github.lexshcherbinin.test'
+
+    sourceType = 'json'
+    includeGetters = true
+    includeSetters = true
+    removeOldOutput = true
+    generateBuilders = true
+    useInnerClassBuilders = true
+}

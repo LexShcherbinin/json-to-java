@@ -1,0 +1,76 @@
+{
+  "attributes": [
+    {
+      "code": 11,
+      "value": "название"
+    },
+    {
+      "code": 12,
+      "value": "артикул"
+    },
+    {
+      "code": 14,
+      "value": "Да"
+    },
+    {
+      "code": 15,
+      "value": "acryl"
+    },
+    {
+      "code": 17,
+      "value": "1111"
+    },
+    {
+      "code": 18,
+      "value": "Австралия"
+    },
+    {
+      "code": 19,
+      "value": "11"
+    },
+    {
+      "code": 20,
+      "value": "Нет"
+    },
+    {
+      "code": 25,
+      "value": "111"
+    },
+    {
+      "code": 29,
+      "value": "1"
+    },
+    {
+      "code": 30,
+      "value": "1"
+    },
+    {
+      "code": 31,
+      "value": "1"
+    },
+    {
+      "code": 33,
+      "value": "1"
+    },
+    {
+      "code": 79,
+      "value": "Нет"
+    },
+    {
+      "code": 80,
+      "value": "Нет"
+    },
+    {
+      "code": 82,
+      "value": "0"
+    },
+    {
+      "code": 111,
+      "value": "тип"
+    },
+    {
+      "code": 122,
+      "value": "0101000000"
+    }
+  ]
+}
